@@ -8,7 +8,7 @@ class WheaterApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       home: Scaffold(
         backgroundColor: Color(0xff255Af4),
         body: Column(
@@ -23,10 +23,8 @@ class WheaterApp extends StatelessWidget {
                 fontSize: 36,
               ),
             ),
-            Image(
-              image: AssetImage(
-                "../image/sol.png",
-              ),
+            Image.asset(
+                "images/sol.png",
               width: 96,
               height: 96,
             ),
@@ -59,41 +57,34 @@ class WheaterApp extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Image(
-                      image: AssetImage(
-                        "../image/umidade.png",
-                      ),
-                    
+                    Image.asset(
+                    "images/umidade.png",
                     ),
 
                     Text(
                       "HUMIDITY",
                       style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
+                      fontSize: 14,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
                       ),
                     ),
 
                     Text(
                       "52%",
-                        style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
+                      style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
                       ),
                     ),
-
                   ]
                 ),
-
+              
                 Column(
                   children: [
-
-                    Image(
-                      image: AssetImage(
-                        "../image/vento.png"
-                      ),
+                    Image.asset(
+                      "images/vento.png"
                     ),
 
                     Text(
@@ -109,224 +100,217 @@ class WheaterApp extends StatelessWidget {
                     Text(
                       "15km/h",
                       style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
+                      fontSize: 14,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
                       ),
-
                     )
-
-                  ],
-            
+                  ],           
                 ),
 
                 Column(
                   children: [
-
-                    Image(
-                      image: AssetImage(
-                        "../image/sensacao.png"
-                      ),
+                    Image.asset(
+                      "images/sensacao.png"                   
                     ),
 
                     Text(
                       "FEELS LIKE",
                       style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-
+                      fontSize: 14,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
                       ),
                     ),
 
                     Text(
                       "24",
                       style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500
+                      fontSize: 14,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500
                       ),
+                    ),
+                  ]
+                  ),
+              ],
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children:  [
+                //Forecast(), 
+                Column(
+                    children: [
+
+                      Text(
+                      "10AM",
+                        style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w400,
+                        
+                        ),
+                      ),
+
+                      Image.asset(
+                        "images/vento.png"
+                      ),
+
+                      Text(
+                        "19°",
+                        style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        ),
                     ),
                   ],
                 ),
-                
-              ],
-            ),
-            Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
 
-            Column(
-          
-              children: [
+                Column(
+                    children: [
+                      Text(
+                        "11AM",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
 
-                Text(
-                  "Now",
-                  style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w400,
-                  ),
-                ),
+                      Image.asset(
+                        "images/parcialmente_nublado.png",
+                          width: 36,
+                          height: 36,
+                      ),
 
-                Image(
-                  image: AssetImage(
-                    "../image/nublado.png" 
-                  ),
-
-                width:36,
-                height: 36,
-                
-                ),
-
-                Text(
-                "18°",
-                  style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600
-                  ),
-                ),
-              ],
-            
-            ),
-
-            Column(
-              children: [
-
-                Text(
-                "10AM",
-                  style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w400,
-
-                  ),
-                ),
-
-                Image(
-                  image: AssetImage(
-                    "../image/vento.png"
-                  ),
-                ),
-
-                Text(
-                  "19°",
-                  style: TextStyle(
+                      Text(
+                    "22°",
+                    style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
                     fontWeight: FontWeight.w600,
 
+                    ),
                   ),
-                )
-              ],
-            ),
+                  ],
+                ),
 
-            Column(
-              children: [
-                Text(
-                  "11AM",
-                  style: TextStyle(
+                Column(
+                  children: [
+
+                    Text(
+                      "12AM",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+
+                    Text(
+                      "23°",
+                      style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      ),
+                    ),
+
+                    Image.asset(
+                      "images/sol.png",
+
+                      width: 36,
+                      height: 36,
+                    
+                    ),
+                  ],
+                ),
+                
+                Column(
+                 children: [
+
+                  Text(
+
+                    "1PM",
+                    style: TextStyle(
                     fontSize: 16,
                     color: Colors.white,
                     fontWeight: FontWeight.w400,
-                  ),
                 ),
+              ),
 
-                Image(
-                  image: AssetImage(
-                    "../image/parcialmente_nublado.png"
+                  Image.asset(
+                    "images/chuva.png",
+
+                    width: 36,
+                    height: 36,
+                  ),
+              
+                  Text(
+                    "24°",
+                    style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600
+                    ),
                   ),
 
-                  width: 36,
-                  height: 36,
-                ),
-
-                Text(
-                  "22°",
-                  style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-
-                  ),
-                ),
               ],
             ),
-
-          Column(
-            children: [
-
-              Text(
-                "12AM",
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-
-              Image(
-                image: AssetImage(
-                  "../image/sol.png"
-                ),
-              width: 36,
-              height: 36,
-              ),
-
-              Text(
-                "23°",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ],
-          ),
-
-          Column(
-            children: [
-              Text(
-                "1PM",
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w400,
-              
-                ),
-              ),
-
-              Image(
-                image: AssetImage(
-                  "../image/chuva.png",
-                ),
-              width: 36,
-              height: 36,
-              ),
-
-              Text(
-                "24°",
-                style: TextStyle(
-
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600
-
-                ),
-              )
-            ],
-
-          )
-            
+              ],
+            ),
           ],
-          )
-          ],
-        ),
-      ),
-    );
+       )
+    
+    ),
+    
+  );
+          
   }
 }
+
+// class Forecast extends StatelessWidget {
+//   late String horario;
+//   late String image;
+//   late int temperature;
+
+//   Forecast(this.horario, this.image, this.temperature);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Column(
+              
+//     children: [
+//       Text(
+//         "Horário",
+//         style: TextStyle(
+//         fontSize: 16,
+//         color: Colors.white,
+//         fontWeight: FontWeight.w400,
+//         ),
+//       ),
+    
+//       Image.asset(
+//         "images/$image.png",
+//         width:36,
+//         height: 36,
+//       ),
+    
+//       Text(
+//       "18°",
+//         style: TextStyle(
+//         fontSize: 20,
+//         color: Colors.white,
+//         fontWeight: FontWeight.w600
+//         ),
+//       ),
+//     ],
+                
+//     );
+//   }
+// }
 
 
 //Material App é a classe principal que tem a classe Scaffold,
